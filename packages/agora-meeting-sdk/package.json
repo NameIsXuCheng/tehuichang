@@ -1,0 +1,103 @@
+{
+  "name": "agora-meeting-sdk",
+  "version": "1.1.5-rc.2",
+  "homepage": ".",
+  "sideEffects": [
+    "*.css"
+  ],
+  "keywords": [
+    "agora",
+    "WebRTC",
+    "APaaS",
+    "AgoraMeeting",
+    "AgoraFlexibleMeeting",
+    "Meeting"
+  ],
+  "main": "lib/edu_sdk.bundle.js",
+  "types": "lib/agora-meeting-sdk/src/infra/api/index.d.ts",
+  "swSrcPath": "./src/infra/sw/service-worker.ts",
+  "resolutions": {
+    "react": "17.0.0",
+    "react-dom": "17.0.0"
+  },
+  "scripts": {
+    "dev": "webpack serve --config ./webpack/webpack.config.dev.js",
+    "s": "yarn dev",
+    "build:types": "tsc -p ./ts.release.json && tsc-alias -p ts.release.json",
+    "build": "webpack --config ./webpack/webpack.config.prod.js",
+    "test": "jest",
+    "bundle:npm": "webpack --config ./webpack/webpack.config.pack.js",
+    "pack:npm": "run-s bundle:npm build:types"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@svgr/webpack": "5.5.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^12.0.0",
+    "@types/classnames": "2.2.11",
+    "@types/deep-diff": "1.0.0",
+    "@types/jest": "24.0.19",
+    "@types/joi": "14.3.4",
+    "@types/lodash": "4.14.145",
+    "@types/node": "12.12.47",
+    "@types/raf": "3.4.0",
+    "@types/react": "17.0.0",
+    "@types/react-datepicker": "3.1.8",
+    "@types/react-dom": "16.9.2",
+    "@types/react-router-dom": "5.1.0",
+    "@types/ua-parser-js": "0.7.33",
+    "@types/uuid": "3.4.6",
+    "@types/video.js": "7.3.4",
+    "@types/react-transition-group": "4.4.1",
+    "autoprefixer": "10.2.5",
+    "babel-jest": "27.0.6",
+    "classnames": "2.2.6",
+    "core-js": "3",
+    "cpx": "1.5.0",
+    "dayjs": "1.10.4",
+    "deep-diff": "1.0.2",
+    "devtron": "1.4.0",
+    "dexie": "3.0.2",
+    "eruda": "2.2.1",
+    "eslint-plugin-react": "7.20.0",
+    "immutable": "4.0.0-rc.12",
+    "jest": "27.0.6",
+    "jest-environment-jsdom": "27.0.6",
+    "js-md5": "0.7.3",
+    "lodash": "4.17.21",
+    "postcss": "8.2.15",
+    "postcss-import": "14.0.1",
+    "postcss-loader": "4.0.3",
+    "react-datepicker": "3.6.0",
+    "react-docgen-typescript": "1.21.0",
+    "react-router-dom": "5.2.0",
+    "rxjs": "6.6.6",
+    "short-uuid": "4.1.0",
+    "tailwindcss": "2.0.3",
+    "tsc-alias": "1.2.8",
+    "typescript": "4.2.3",
+    "ua-parser-js": "0.7.22",
+    "uuid": "3.3.3",
+    "dotenv": "10.0.0",
+    "buffer": "6.0.3",
+    "agora-access-token": "2.0.4"
+  },
+  "dependencies": {
+    "agora-meeting-core": "1.1.5-rc.2",
+    "i18next": "20.1.0",
+    "mobx": "5.15.4",
+    "mobx-react": "6.3.1",
+    "react": "17.0.0",
+    "react-dom": "17.0.0",
+    "react-i18next": "11.8.12",
+    "react-router": "5.2.0",
+    "react-transition-group": "4.4.1"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "agora-meeting-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "start-storybook -p 6006 --no-manager-cache",
+    "storybook": "start-storybook -p 6006 --no-manager-cache",
+    "test": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@storybook/addon-actions": "6.3.7",
+    "@storybook/addon-console": "1.2.3",
+    "@storybook/addon-controls": "6.2.8",
+    "@storybook/addon-essentials": "6.2.8",
+    "@storybook/addon-links": "6.2.8",
+    "@storybook/node-logger": "6.2.8",
+    "@storybook/react": "6.2.8",
+    "@storybook/preset-create-react-app": "3.1.7",
+    "@svgr/webpack": "5.5.0",
+    "tailwindcss": "2.0.3",
+    "@types/classnames": "2.2.11",
+    "@types/react-dom": "16.9.2",
+    "@types/react-router-dom": "5.1.0",
+    "@types/react-select": "4.0.15",
+    "classnames": "2.2.6",
+    "dayjs": "1.10.4",
+    "postcss": "8.2.7",
+    "postcss-import": "14.0.1",
+    "postcss-loader": "4.0.3",
+    "storybook": "6.2.8",
+    "svg-sprite-loader": "6.0.7",
+    "react-scripts": "4.0.3"
+  },
+  "dependencies": {
+    "rc-motion": "2.4.4",
+    "rc-pagination": "3.1.6",
+    "rc-select": "12.1.6",
+    "rc-slider": "9.7.1",
+    "rc-tabs": "11.7.3",
+    "rc-tooltip": "5.1.0",
+    "rc-trigger": "5.2.3",
+    "rc-util": "5.8.1",
+    "react-select": "4.3.0",
+    "react-draggable": "4.4.3",
+    "rc-notification": "4.4.0"
+  }
+}

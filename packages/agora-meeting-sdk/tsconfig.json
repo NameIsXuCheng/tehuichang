@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es6",
+    "module": "esnext",
+    "experimentalDecorators": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext",
+      "webworker"
+    ],
+    "paths": {
+      "@/*": ["src/*"],
+      "~core": ["./src/core"],
+      "~core/*": ["./src/core/*"],
+      "~ui-kit": ["../agora-meeting-ui/src"],
+      "~components": ["../agora-meeting-ui/src/components"],
+      "~components/*": ["../agora-meeting-ui/src/components/*"],
+      "~scaffold": ["../agora-meeting-ui/src/scaffold"],
+      "~scaffold/*": ["../agora-meeting-ui/src/scaffold/*"],
+      "~utilities": ["../agora-meeting-ui/src/utilities"],
+      "~utilities/*": ["../agora-meeting-ui/src/utilities/*"],
+    },
+    "outDir": ".demo",
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*/*.stories.tsx"
+  ]
+}

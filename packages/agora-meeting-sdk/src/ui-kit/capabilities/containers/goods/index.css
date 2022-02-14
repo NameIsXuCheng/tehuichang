@@ -1,0 +1,104 @@
+.metting-goods {
+  @apply bg-white;
+  position: relative;
+  border-radius: 4px;
+  width: 260px;
+  height: 100%;
+  @apply border-l border-gray-100;
+}
+
+.metting-goods .goods-header {
+  @apply flex items-center justify-between;
+  height: 44px;
+  padding: 0 15px;
+  border-bottom: 1px solid #ececf1;
+  border-top: 1px solid #ececf1;
+}
+
+.metting-goods .goods-header .icon-close {
+  width: 24px;
+  height: 24px;
+  background: url('../../../assets/close@2x.png');
+}
+
+.metting-goods .goods-header .icon-close::before {
+  content: '';
+}
+
+.metting-goods .goods-header-title {
+  font-size: 13px;
+  font-weight: 400;
+  color: #191919;
+}
+
+.metting-goods .goods-header-message-state {
+  font-size: 24px;
+  color: #979797;
+}
+
+.metting-goods .goods-notice {
+  @apply flex justify-center items-center w-full;
+  height: 32px;
+  background: #f9f9fc;
+  border: 1px solid #ececf1;
+  font-size: 12px;
+  font-weight: 400;
+  color: #191919;
+  top: 44px;
+  position: absolute;
+  z-index: 1;
+}
+
+.metting-goods .goods-notice .iconfont {
+  margin-right: 5px;
+  font-size: 17px;
+  color: #f04c36;
+}
+
+.metting-goods .goods-history {
+  width: 100%;
+  height: calc(100% - 120px);
+  padding-bottom: 18px;
+  overflow-y: scroll;
+  width: 100%;
+  position: absolute;
+}
+
+.metting-goods .goods-texting {
+  @apply flex justify-between items-center;
+  padding: 15px;
+  min-height: 60px;
+  width: 100%;
+  background-color: #f9f9fc;
+  border-radius: 18px 18px 4px 4px;
+  border: 1px solid #ececf1;
+  position: absolute;
+  bottom: 0;
+  z-index: 999;
+}
+
+.metting-goods .goods-texting > textarea {
+  @apply w-full outline-none border-none resize-none;
+  height: 50px;
+  transition: 0.3s;
+}
+
+.metting-goods .goods-texting.focus > textarea {
+  height: 80px;
+  margin-top: 10px;
+}
+
+.metting-goods .goods-texting.focus {
+  @apply flex flex-col items-end justify-end;
+}
+
+.metting-goods .goods-texting-message {
+  @apply bg-transparent;
+}
+
+.metting-goods .goods-texting-message:hover,
+.goods-texting-message:active,
+.goods-texting-message:focus {
+  @apply outline-none;
+}
+

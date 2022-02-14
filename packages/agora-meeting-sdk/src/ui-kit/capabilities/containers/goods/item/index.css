@@ -1,0 +1,48 @@
+.goods-message {
+  position: relative;
+  width: 100%;
+  height: 110px;
+  padding: 5px;
+  margin-top: 5px;
+  background-color: #E1E1EA;
+  font-size: 12px;
+  flex-direction: column;
+  @apply cursor-pointer;
+}
+.goods-message .goods-countent-left{
+	width: 100px;
+	height: 100px;
+	float: left;
+	flex-direction: column;
+}
+.goods-message .goods-countent-right{
+	width: 140px;
+	display: flex;
+	flex-direction: column;
+	float: right;
+}
+
+.goods-message .goods-countent-right .goods-item-header{
+	height: 15px;
+}
+
+.goods-message .goods-countent-right .goods-item-content{
+	height: 45px;
+}
+
+.goods-message .goods-countent-right .goods-item-price{
+	height: 15px;
+}
+.goods-message .goods-countent-right .goods-item-butten{
+	height: 25px;
+}
+
+.goods-message .goods-countent-right .goods-item-butten .goods-item-price-butten{
+	width: 48%;
+	float: right;
+	margin: 0 1%;
+	min-width: 20px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 10px;
+}
