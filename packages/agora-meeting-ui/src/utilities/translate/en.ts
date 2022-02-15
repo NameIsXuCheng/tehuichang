@@ -69,7 +69,7 @@ export const en = {
     pwd_tips:
       '• When the room already exists, you need to enter the correct password\n• When the room does not exist, the password entered will become the password of this room\n• The room can be without password',
     limit_tip:
-      'This is a testing product. Please refrain from using it commercially. The max duration per session is 45 minutes.',
+      'This is a testing product. Please refrain from using it commercially. The max duration per session is 120 minutes.',
     tip_room_name_empty: 'Please enter the room name',
     tip_room_name_over: 'Room name max length is 50 characters',
     tip_room_name_short: 'Room name min length is 3 characters',

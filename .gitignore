@@ -45,3 +45,4 @@ win
 *.log
 .prettierrc
 Jenkinsfile_bitbucket.groovy
+.idea/

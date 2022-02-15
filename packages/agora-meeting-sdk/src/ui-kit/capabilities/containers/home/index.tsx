@@ -192,7 +192,7 @@ export const MettingHome: FC<MettingHomeProps> = observer(
           </section>
           <form className="login__center">
             <img className="logo-img" src={logo} alt="" />
-            <span className="logo-text">Agora Meeting</span>
+            <span className="logo-text">New Star Meeting</span>
             <Input
               style={{ height: '40px' }}
               placeholder={transI18n('login.room_name')}
@@ -258,10 +258,10 @@ export const MettingHome: FC<MettingHomeProps> = observer(
             <div className="btn-add" onClick={(e) => onClickJoin()}>
               {transI18n('login.enter')}
             </div>
-            {/*<div className="tip">*/}
-            {/*  <i className="icon icon-tip"></i>*/}
-            {/*  <div className="text">{transI18n('login.limit_tip')}</div>*/}
-            {/*</div>*/}
+            <div className="tip">
+              <i className="icon icon-tip"></i>
+              <div className="text">{transI18n('login.limit_tip')}</div>
+            </div>
           </form>
           <section className="login__bottom"></section>
         </div>

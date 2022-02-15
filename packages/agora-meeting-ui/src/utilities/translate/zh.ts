@@ -71,7 +71,7 @@ export const zh = {
     role: '角色',
     pwd_tips:
       '• 房间已存在时，需要输入正确的密码\n• 房间不存在时，输入的密码将成为这个房间的密码\n• 房间可以不设置密码',
-    limit_tip: '本应用为测试产品，请勿商用。单次会议最长45分钟。',
+    limit_tip: '本应用为测试产品，请勿商用。单次会议最长120分钟。',
     tip_room_name_empty: '请输入房间名',
     tip_room_name_over: '房间名最多为50个字符',
     tip_room_name_short: '房间名必须不小于3位',
