@@ -12,18 +12,6 @@ const DEFAULT_IN_OUT_NOTIFICATION_LIMIT_COUNT = 50;
 export const HomePage = observer(() => {
   const homeStore = useHomeStore();
 
-  const EduVideoEncoderConfiguration = {
-    width: 1920,
-    height: 1080,
-    frameRate: 30,
-    bitrate: 3150,
-  };
-
-  const mediaOptions = {
-    cameraEncoderConfiguration: EduVideoEncoderConfiguration,
-    screenShareEncoderConfiguration: EduVideoEncoderConfiguration,
-  };
-
   const text = {
     userName: '',
     roomName: '',
@@ -32,7 +20,6 @@ export const HomePage = observer(() => {
     openCamera: true,
     userInOutNotificationLimitCount: DEFAULT_IN_OUT_NOTIFICATION_LIMIT_COUNT,
     language: 'zh',
-    mediaOptions: mediaOptions,
   };
 
   const history = useHistory();
@@ -56,7 +43,6 @@ export const HomePage = observer(() => {
         text.userInOutNotificationLimitCount,
       sdkDomain: `${REACT_APP_AGORA_APP_SDK_DOMAIN}`,
       language: text.language,
-      mediaOptions: text.mediaOptions,
     });
     history.push('/launch');
   };

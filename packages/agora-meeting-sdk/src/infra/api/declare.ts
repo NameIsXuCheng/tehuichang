@@ -5,7 +5,6 @@ import {
   RecordConfig,
 } from 'agora-meeting-core';
 import { LanguageEnum } from '~ui-kit';
-import { EduVideoEncoderConfiguration } from "agora-meeting-core";
 
 export enum RoleTypeEnum {
   none = -1,
@@ -71,39 +70,7 @@ export type LaunchConfig = {
   sdkDomain?: string; // 域名
   language?: LanguageEnum; // 国际化
   maxHost?: number; //最大主持人数
-  mediaOptions?: MediaOptions; //媒体流相关设置
 };
-
-//视频编码参数配置。
-export interface EduVideoEncoderConfiguration {
-  width: number;
-  height: number;
-  frameRate: number;
-  bitrate: number;
-}
-
-//媒体流加密模式
-export enum MediaEncryptionMode {
-  AES_128_XTS = 1,
-  AES_128_ECB = 2,
-  AES_256_XTS = 3,
-  AES_128_GCM = 5,
-  AES_256_GCM = 6
-}
-
-//媒体流加密配置
-export declare interface MediaEncryptionConfig {
-  mode: MediaEncryptionMode,
-  key: string
-}
-
-//媒体流相关设置
-export type MediaOptions = {
-  cameraEncoderConfiguration?: EduVideoEncoderConfiguration;
-  screenShareEncoderConfiguration?: EduVideoEncoderConfiguration;
-  encryptionConfig?: MediaEncryptionConfig;
-};
-
 
 // 视图展示模式
 export enum RenderLayout {

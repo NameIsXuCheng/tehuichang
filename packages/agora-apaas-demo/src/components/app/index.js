@@ -24,18 +24,6 @@ const token = RtmTokenBuilder.buildToken(
   0,
 );
 
-const EduVideoEncoderConfiguration = {
-  width: 1920,
-  height: 1080,
-  frameRate: 30,
-  bitrate: 3150,
-};
-
-const mediaOptions = {
-  cameraEncoderConfiguration: EduVideoEncoderConfiguration,
-  screenShareEncoderConfiguration: EduVideoEncoderConfiguration,
-};
-
 export default class App {
   constructor(elem) {
     if (!elem) return;

@@ -113,7 +113,6 @@ export default class AgoraMeetingSDK {
         mainPath: mainPath,
         roomPath: roomPath,
         pretest: option.pretest,
-        mediaOptions: option?.mediaOptions,
       };
       // 设置语言
       if (option.language) {
