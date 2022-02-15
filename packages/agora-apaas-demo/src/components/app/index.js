@@ -1,7 +1,6 @@
 import AgoraMeetingSDK from 'agora-meeting-sdk';
 import { RtmTokenBuilder, RtmRole } from 'agora-access-token';
 import MD5 from 'js-md5';
-import {EduVideoEncoderConfiguration, MediaEncryptionConfig} from "agora-meeting-sdk/src/infra/api";
 
 //  Please enter your appId
 const appId = '700050eaaa2945088914a01c1bb39c9d';
@@ -47,7 +46,6 @@ export default class App {
       openMic: true,
       userInOutNotificationLimitCount: 50,
       recordUrl: '',
-      mediaOptions: mediaOptions,
       listener: (evt) => {
         console.log('evt', evt);
       },
